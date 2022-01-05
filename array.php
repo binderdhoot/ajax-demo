@@ -24,6 +24,6 @@
     print_r($result);
     echo "<br>";
     //compare and get common values
-    $result1 = array_intersect($str1Arr,$str2Arr);
+    $result1 = array_unique(array_intersect($str1Arr,$str2Arr));
     print_r($result1);
 ?>
