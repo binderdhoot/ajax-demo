@@ -5,6 +5,7 @@
 
     //sort into accending
     sort($arr);
+    
     //get length of array
     $arrlength = count($arr);
     //print values
@@ -20,8 +21,11 @@
 
     //compare array to get different values
     $result = array_diff($str1Arr,$str2Arr);
+    $resultr = array_diff($str2Arr,$str1Arr);
     echo "<pre>";
     print_r($result);
+    echo "<br>";
+    print_r($resultr);
     echo "<br>";
     //compare and get common values
     $result1 = array_unique(array_intersect($str1Arr,$str2Arr));
